@@ -1,6 +1,6 @@
 <?php
 
-use Input;
+use App\User;
 use App\Profile;
 
 /*
