@@ -33,7 +33,8 @@ Route::get('login/fb/callback', function() {
     if ($uid == 0) return Redirect::to('/')->with('message', 'There was an error');
 
     $me = $facebook->api('/me');
-
+    var_dump($facebook);
+    dd();
     $profile = Profile::whereUid($uid)->first();
     if (empty($profile)) {
 
