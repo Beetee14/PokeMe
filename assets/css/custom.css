@@ -8,7 +8,7 @@
     border-radius: 6px;
     padding: 8px 16px;
     margin-top: 25px;
-    overflow: scroll;
+    margin-bottom: 25px;
 }
 
 .poke {
@@ -26,7 +26,8 @@
     border-radius: 4px;
     padding: 16px 16px;
     margin-top: 25px;
-    overflow: scroll;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .friend-item {
@@ -49,7 +50,6 @@
 @media screen and (min-width: 768px){
     .pokes {
         padding: 32px 48px;
-        max-height: 500px;
     }
 
     .poke {
@@ -58,7 +58,6 @@
 
     .friends-list {
         padding: 16px 16px;
-        max-height: 500px;
     }
 
     .friend-item {

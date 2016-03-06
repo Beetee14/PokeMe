@@ -33,7 +33,7 @@
     <link href="assets/css/custom.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body ng-app="pokeme">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -121,10 +121,10 @@
                 </div>
             </div>
             <div class="col-md-offset-1 col-md-3">
-                <div class="friends-list">
-                    <input type="text" class="form-control" placeholder="Friend name" ></input>
-                    <div class="friend-item" data-toggle="modal" data-target="#myModal" data-whatever="@friendName">
-                        <a href="#"><img class="circular-pic" width="24" src="assets/images/poking.jpg" alt="Avatar"></a> <span>Friend</span>
+                <div class="friends-list" ng-controller="friends-list-ctrl">
+                    <input type="text" class="form-control" placeholder="Friend name" ng-model="query" ></input>
+                    <div ng-repeat="friend in friends | filter:query" class="friend-item" data-toggle="modal" data-target="#myModal" data-whatever="@{{friend.email}}">
+                        <a href="#"><img class="circular-pic" width="24" ng-src="assets/images/{{friend.image}}" alt="Avatar"></a> <span>{{friend.first_name}} {{friend.last_name}}</span>
                     </div>
                 </div>
             </div>
@@ -181,5 +181,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
