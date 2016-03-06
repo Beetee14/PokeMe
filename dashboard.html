@@ -31,13 +31,24 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="assets/css/custom.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+    <script>
+  var pattern = Trianglify({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+  document.body.appendChild(pattern.canvas())
+</script> 
+
   </head>
 
-  <body ng-app="pokeme">
+  <body id="bckrnd" ng-app="pokeme">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>

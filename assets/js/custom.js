@@ -13,3 +13,15 @@ $(function () {
 function clicked(){
     alert("thing");
 }
+
+function addTriangleTo(target) {
+    var dimensions = target.getClientRects()[0];
+    var pattern = Trianglify({
+        width: dimensions.width, 
+        height: dimensions.height,
+        x_colors: "Oranges"
+    });
+    target.style['background-image'] = 'url(' + pattern.png() + ')';
+}
+
+addTriangleTo(document.getElementById('bckrnd'));

@@ -47,6 +47,30 @@
     float: right;
 }
 
+.navbar-default {
+    background-color: #ff8400;
+}
+
+.dropdown-toggle {
+    /*background-color: #ff7800;*/
+}
+
+.ng-scope {
+    /*background-color: #ffb84d;*/
+}
+
+.friends-list {
+    background-color: #eee;
+}
+
+.friend-item {
+    background-color: #fff;
+}
+
+a:hover {
+    background-color: #ff7800;
+}
+
 @media screen and (min-width: 768px){
     .pokes {
         padding: 32px 48px;
