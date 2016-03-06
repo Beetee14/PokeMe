@@ -1,0 +1,67 @@
+.circular-pic {
+    border-radius: 100px;
+}
+
+.pokes {
+    color: inherit;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin-top: 25px;
+    overflow: scroll;
+}
+
+.poke {
+    color: inherit;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3px 7px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px #888888;
+}
+
+.friends-list {
+    color: inherit;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 16px 16px;
+    margin-top: 25px;
+    overflow: scroll;
+}
+
+.friend-item {
+    color: inherit;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px #888888;
+    cursor:pointer;
+}
+
+.circle-btn {
+    width:36px;
+    height:36px;
+    border-radius:50px;
+    float: right;
+}
+
+@media screen and (min-width: 768px){
+    .pokes {
+        padding: 32px 48px;
+        max-height: 500px;
+    }
+
+    .poke {
+        padding: 12px 24px;
+    }
+
+    .friends-list {
+        padding: 16px 16px;
+        max-height: 500px;
+    }
+
+    .friend-item {
+        padding: 6px 12px;
+    }
+}
